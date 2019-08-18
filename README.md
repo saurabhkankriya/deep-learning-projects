@@ -35,9 +35,9 @@
 
 **Model details**
 
-    * **Model 1:**
+    **Model 1:**
 	
-		kernel [2*2]
+	    kernel [2*2]
 		
 		strides= (1, 1)
 		
@@ -45,7 +45,7 @@
 		
 		3 hidden layers
 	 
-    * **Model 2:**
+    **Model 2:**
 	
         kernel [5*5]
 		
@@ -59,7 +59,7 @@
 		
 		conv2d -> dense(512) -> conv2d-maxpool-dropout-flatten -> dense(256) -> dense(128)
 	 
-     * **Model 3:**
+    **Model 3:**
 	 
 	    kernel [7*7]
 		
@@ -69,7 +69,7 @@
 		
         used BatchNorm
 	 
-     * **Model 4:**
+    **Model 4:**
 	 
 		kernel [2*2]
 		
@@ -85,7 +85,7 @@
 		
 		optimizer = 'sgd'
 	  
-      * **Model 5:**
+    **Model 5:**
 	  
 	    kernel [5*5]
 		
@@ -105,7 +105,7 @@
 		
 		optimizer = 'nadam'
 	  
-      * **Model 6:**
+    **Model 6:**
 	  
 		kernel [7*7]
 		
