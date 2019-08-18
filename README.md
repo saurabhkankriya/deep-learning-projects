@@ -47,79 +47,79 @@
 	 
    **Model 2:**
 	
-        kernel [5*5]
+       kernel [5*5]
 		
-		strides= (2, 2)
+	   strides= (2, 2)
 		
-		padding = 'same'
+	   padding = 'same'
 		
-		maxpoolsize= (4,4)
+	   maxpoolsize= (4,4)
 		
-		optimizer = 'adam'
+	   optimizer = 'adam'
 		
-		conv2d -> dense(512) -> conv2d-maxpool-dropout-flatten -> dense(256) -> dense(128)
+	   conv2d -> dense(512) -> conv2d-maxpool-dropout-flatten -> dense(256) -> dense(128)
 	 
    **Model 3:**
 	 
-	    kernel [7*7]
+	   kernel [7*7]
 		
-        strides= (3, 3)
+       strides= (3, 3)
 		
-        optimizer = 'RMSprop'
+       optimizer = 'RMSprop'
 		
-        used BatchNorm
+       used BatchNorm
 	 
    **Model 4:**
 	 
-		kernel [2*2]
+	   kernel [2*2]
 		
-		strides= (1, 1)
+	   strides= (1, 1)
 		
-		3 Conv2D layers followed by 2 MaxPool layers of size (2,2)
+	   3 Conv2D layers followed by 2 MaxPool layers of size (2,2)
 		
-		3 hidden layers
+	   3 hidden layers
 		
-		kernel_initializer = 'lecun_normal'
+	   kernel_initializer = 'lecun_normal'
 		
-		activation='tanh'
+	   activation='tanh'
 		
-		optimizer = 'sgd'
+	   optimizer = 'sgd'
 	  
    **Model 5:**
 	  
-	    kernel [5*5]
+	   kernel [5*5]
 		
-		strides= (2, 2)
+	   strides= (2, 2)
 		
-		padding = 'same'
+	   padding = 'same'
 		
-		maxpoolsize= (4,4)
+	   maxpoolsize= (4,4)
 		
-		optimizer = 'adam'
+	   optimizer = 'adam'
 		
-		conv2d -> dense(512) -> conv2d-maxpool-dropout-flatten -> dense(256) -> dense(128)
+	   conv2d -> dense(512) -> conv2d-maxpool-dropout-flatten -> dense(256) -> dense(128)
 		
-		kernel_initializer = 'he_uniform'
+	   kernel_initializer = 'he_uniform'
 		
-		activation_function = 'elu'
+	   activation_function = 'elu'
 		
-		optimizer = 'nadam'
+	   optimizer = 'nadam'
 	  
    **Model 6:**
 	  
-		kernel [7*7]
+	   kernel [7*7]
 		
-		strides= (3, 3)
+	   strides= (3, 3)
 		
-		optimizer = 'RMSprop'
+	   optimizer = 'RMSprop'
 		
-		used BatchNorm
+	   used BatchNorm
 		
-		kernel_initializer = 'glorot_normal'
+	   kernel_initializer = 'glorot_normal'
 		
-		optimizer='adamax'
+	   optimizer='adamax'
 		
-		activation='selu
+	   activation='selu
 
 ## LSTM on Amazon Fine Food Reviews
 **Objective:** To build different RNN architectures of LSTM on the Amazon Fine Food dataset by experimenting with different weight initializers, LSTM gates, number of hidden layers, Optimizers, BatchNorm, Dropout etc and predict whether a given review is positive or negative. 
@@ -131,24 +131,24 @@
 
 **Model Details**
 
-    * **Model 1**
+    **Model 1**
     
-	    Embedding->LSTM(100)->Dense(1)
+	   Embedding->LSTM(100)->Dense(1)
 		
-        batchsize = 5000
+       batchsize = 5000
 		
-    * **Model 2**
+    **Model 2**
     
-		Embedding->LSTM(128)->Dense(512)+Dropout(0.25)->LSTM(64)->Dense(256)->Dense(1)
+	   Embedding->LSTM(128)->Dense(512)+Dropout(0.25)->LSTM(64)->Dense(256)->Dense(1)
         
-		batchsize = 1000
+	   batchsize = 1000
 		
-    * **Model 3**
+    **Model 3**
 	
-        Embedding->LSTM(100)->Dense(128)+Dropout(0.25)+BatchNorm-LSTM(100)->Dense(64)+ Dropout(0.5)+BatchNorm->LSTM(100)->
+       Embedding->LSTM(100)->Dense(128)+Dropout(0.25)+BatchNorm-LSTM(100)->Dense(64)+ Dropout(0.5)+BatchNorm->LSTM(100)->
     Dense(32)->Dense(16)+BatchNorm-LSTM(64)->Dense(16)+BatchNorm-Dense(1)
 	
-        batchsize = 1500
+       batchsize = 1500
 
 
 
