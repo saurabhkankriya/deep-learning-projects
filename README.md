@@ -131,19 +131,19 @@
 
 **Model Details**
 
-    **Model 1**
+   **Model 1**
     
 	   Embedding->LSTM(100)->Dense(1)
 		
        batchsize = 5000
 		
-    **Model 2**
+   **Model 2**
     
 	   Embedding->LSTM(128)->Dense(512)+Dropout(0.25)->LSTM(64)->Dense(256)->Dense(1)
         
 	   batchsize = 1000
 		
-    **Model 3**
+   **Model 3**
 	
        Embedding->LSTM(100)->Dense(128)+Dropout(0.25)+BatchNorm-LSTM(100)->Dense(64)+ Dropout(0.5)+BatchNorm->LSTM(100)->
     Dense(32)->Dense(16)+BatchNorm-LSTM(64)->Dense(16)+BatchNorm-Dense(1)
