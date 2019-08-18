@@ -34,25 +34,30 @@
 3. Plotted error plot of number of epochs against training and validataion set.
 Model details
     * **Model 1:**
+	
      kernel [2*2]
      strides= (1, 1)
      3 Conv2D layers followed by 2 MaxPool layers of size (2,2)
      3 hidden layers
+	 
     * **Model 2:**
+	
      kernel [5*5]
      strides= (2, 2)
      padding = 'same'
      maxpoolsize= (4,4)
      optimizer = 'adam'
-     conv2d -> dense(512) -> conv2d-maxpool-dropout-flatten -> dense(256) ->      dense(128)
+     conv2d -> dense(512) -> conv2d-maxpool-dropout-flatten -> dense(256) -> dense(128)
+	 
      * **Model 3:**
-      kernel [7*7]
-      Test score: 0.030372555697989446
-      Test accuracy: 0.9902kernel [7*7]
-      strides= (3, 3)
-      optimizer = 'RMSprop'
-      used BatchNorm
-      * **Model 4:**
+	 
+	 kernel [7*7]
+     strides= (3, 3)
+     optimizer = 'RMSprop'
+     used BatchNorm
+	 
+     * **Model 4:**
+	 
       kernel [2*2]
       strides= (1, 1)
       3 Conv2D layers followed by 2 MaxPool layers of size (2,2)
@@ -60,7 +65,9 @@ Model details
       kernel_initializer = 'lecun_normal'
       activation='tanh'
       optimizer = 'sgd'
+	  
       * **Model 5:**
+	  
       kernel [5*5]
       strides= (2, 2)
       padding = 'same'
@@ -70,7 +77,9 @@ Model details
       kernel_initializer = 'he_uniform'
       activation_function = 'elu'
       optimizer = 'nadam'
+	  
       * **Model 6:**
+	  
       kernel [7*7]
       strides= (3, 3)
       optimizer = 'RMSprop'
