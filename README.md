@@ -35,10 +35,10 @@
 Model details
     * **Model 1:**
 	
-     kernel [2*2]
-     strides= (1, 1)
-     3 Conv2D layers followed by 2 MaxPool layers of size (2,2)
-     3 hidden layers
+		kernel [2*2]
+		strides= (1, 1)
+		3 Conv2D layers followed by 2 MaxPool layers of size (2,2)
+		3 hidden layers
 	 
     * **Model 2:**
 	
